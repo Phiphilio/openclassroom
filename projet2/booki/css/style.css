@@ -1,6 +1,27 @@
 /****** General ***********/
+/* https://www.alsacreations.com/astuce/lire/36-la-technique-du-reset-css.html */
 * {
     font-family: 'Raleway', sans-serif;
+}
+
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 :root {
@@ -8,6 +29,7 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
+
 
 .fa-solid {
     color: var(--main-color);
@@ -23,6 +45,8 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -57,6 +81,12 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+body {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
 
 /****** header ******/
 .enTete {
@@ -131,6 +161,11 @@ li {
     font-size: 18px;
     font-weight: 700;
 }
+
+.search_bar button p {
+    position: relative;
+    bottom: 19px;
+}
 .search_bar input {
     width: 250px;
     height: 49px;
@@ -142,17 +177,33 @@ li {
     border: 1px;
     background-color : #F2F2F2;
 }
+
+.fa-solid.fa-location-dot::before {
+    /* l'icone est une classe, donc je l'ai appelé, puis j'ai utilisé ::before qui me permet de gérer le dit icone*/
+    content: "\f3c5";
+    display: flex;
+    width: 50%;
+    font-size: 18px;
+    color: black;
+    position: relative;
+    left: 20px;
+    top: 13px;
+}
 .filter_bar {
     display: flex;
+   /* min-width: 908px;*/
     
 }
-.filter_bar ul{
+.filter_bar ul {
     display: flex;
     gap: 10px;
-
-    width: 173px;
-    height: 50px;
+}
     
+input::placeholder{
+
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #000000;
 }
 .filter_bar ul li {
     list-style: none;
@@ -173,16 +224,24 @@ li {
 }
 
 .filter_bar ul li:nth-child(1){
-    width: 173px;
+    width: 17%;
+   
+    
 }
 .filter_bar ul li:nth-child(2){
-    width: 134px;
+    width: 14%;
+    
+    
 }
 .filter_bar ul li:nth-child(3){
-    width: 170px;
+    width: 19%;
+   
+    
 }
 .filter_bar ul li:nth-child(4){
-    width: 167px;
+    width: 19%;
+   
+    
 }
 
 .filter_bar p{
@@ -202,6 +261,8 @@ li {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 90px;
+    
 }
 
 .hebergements-and-populaires section {
@@ -253,6 +314,7 @@ de la carte*/
     width: 250.33px;
     height: 64.25;
     padding: 0px 15px 0px 15px;
+    white-space: nowrap;
 }
 
 .carte-titre{
@@ -321,7 +383,8 @@ white-space: nowrap;
 /****** Activités à marseille ***********/
 .section-activites {
     height: 559.02px;
-    padding: 30px;
+    padding-top: 30px;
+    margin-bottom: 60px;
     
 }
 .section-activites h2 {
@@ -330,104 +393,862 @@ white-space: nowrap;
     font-size: 22px;
     line-height: 25.83px;
 }
+.section-activites a{
+    width: 23.2%;
+}
 .activites{
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
 }
 
 .carte-activites{
-    width: 297.5px;
+    width: 100%;
     height: 439px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+
 }
 .carte-activites img {
     width: 100%;
     height: 380px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
+     
 }
 
+.carte-actes h3{
+    padding-left: 15px;
+}
+/******footer ***********/
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    width: 93.05%;
+    gap: 260px;
+    padding-left: 30px;
+}
+
+footer div {
+    flex-direction: column;/* rappel : cette commande s'applique sur l'élément que je veux altérer*/
+    display: flex;
+    gap: 15px;
+
+}
+
+footer div p {
+    margin: 1px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-
-    /****** Hebergements ***********/
-.hebergements {
-    width: 999px;
-}
-.column1{
-    display: grid;
-    grid-template-columns: 250px 250px 250px;
-    gap: 15px;
-}
-.hebergements h2 {
-    width: 864px;
-    height: 26px;
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.carte {
-    width: 100% ;
-    height: 207.25px;
-   
-    border-radius : 20px 20px 20px 20px;
-    padding: 0px 0px 15px 0px;
-    background-color: #FFFFFF;
-    margin-right: 0px;
-}
-
-.carte img {
-    width: 90%;
-    height:124px ; 
-    border-radius:20px 20px 0px 0px ;
-    border: 5px;
-    background-color: #FFFFFF;
-} 
-
-.carte-content{
-    width: 268px;
-    height: 64.25;
-    padding: 0px 15px 0px 15px;
-}
-
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
+    .enTete {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
     }
-
-    .populaires-cards a {
-        width: 30%;
+    
+    .logo{
+        width: 61.09px;
+        height: 19px;
+        padding:30px 50px 30px 50px;
+        
     }
-
-    .populaires-cards .card-title {
+    
+    .menu_de_navi {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+    
+    li {
+        display: flex;
+        list-style-type : none;
+        justify-content: space-between;
+    }
+    
+    .menu_de_navi div {
+        padding : 5px;
+        margin: 15px;
+    }
+    
+    .menu_de_navi div:hover {
+        padding-top : 10px;
+        
+        color: rgb(118, 161, 226);
+        border-top: 2px solid;
+        border-top-color: rgb(103, 148, 216) ;
+       
+    }
+    
+    
+    .liste_navi_1{
+        width:113px; 
+        height:35px;
+    }
+    
+    .liste_navi_2 {
+        width:63px; 
+        height:35px;
+    }
+    
+    /***** info group******/
+    .info_group{
+        display: flex;
+        flex-direction: column;
+        gap:35px;
+        margin-bottom : 30px;
+    
+    }
+    .search_bar {
+        display: flex;
+    }
+    .search_bar button {
+        border-radius: 0px 15px 15px 0px;
+        border: 1px;
+        background-color: 
+        #0065FC;
+        padding: 15px 16px 15px 16px;
+        width: 132px;
+        height: 49px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .search_bar button p {
+        position: relative;
+        bottom: 19px;
+    }
+    .search_bar input {
+        width: 250px;
+        height: 49px;
+    }
+    .search_bar i {
+        width: 50px;
+        height: 49px;
+        border-radius: 15px 0px 0px 15px;
+        border: 1px;
+        background-color : #F2F2F2;
+    }
+    .fa-solid.fa-location-dot::before {
+        /* l'icone est une classe, donc je l'ai appelé, puis j'ai utilisé ::before qui me permet de gérer le dit icone*/
+        content: "\f3c5";
+        display: flex;
+        width: 50%;
+        font-size: 18px;
+        color: black;
+        position: relative;
+        left: 20px;
+        top: 13px;
+    }
+    .filter_bar {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .filter_bar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        min-width: 841px;
+    }
+        
+    input::placeholder{
+    
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #000000;
+        position: relative;
+        left: 40px;
+    }
+    .filter_bar ul li {
+        list-style: none;
+        border: 2px solid;
+        border-radius: 25px;
+        border-color: #D9D9D9;
+        padding: 15px 19px 15px 19px;
+        height: 20px;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 19.96px;
+        display: flex;
+        justify-content: left;
+        gap: 15px;
+        white-space: nowrap;
+    }
+    .filter_bar ul li:hover{
+        background-color: #DEEBFF;
+    }
+    
+    .filter_bar ul li:nth-child(1) {
+        width: 15%;
+    }
+    .filter_bar ul li:nth-child(2){
+        width: 14%;
+    }
+    .filter_bar ul li:nth-child(3){
+        width: 15%;
+    }
+    .filter_bar ul li:nth-child(4){
+        width: 15%;
+    }
+    
+    .filter_bar p{
+        width:54px;
+        height: 21px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.13px;
+        padding-bottom: 10px ;
+        padding-left: 0;
+    }
+    
+    .infobar{
+        display: flex;
+        gap:5px;
+    }
+    /****** Hebergements And Populaires ***********/
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 90px;
+    }
+    
+    .hebergements-and-populaires section {
+        background-color: var(--main-bg-color);
+        border-radius: 20px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    
+    /****** Hebergements ***********/
+    .hebergements {
+        width: 100%;
+       
+       
+    }
+    .column1{
+        width: ;
+        display: flex;
+       
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .carte {
+        width: 30.33% ;
+        height: 177px;
+       
+        border-radius : 20px;
+        padding: 4px 4px 5px 4px;
+    /*le secret pour que mmon image suffise comme sur la maquette se trouvait dans le padding
+    de la carte*/
+        
+        background-color: #FFFFFF;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+       
+    }
+    
+    .carte img {
+        width: 100%;
+        height:90px ;
+        border-top-left-radius:20px ;
+        border-top-right-radius: 20px;
+        /*object-fit: fill;*/
+        object-fit: cover;
+    }
+    .carte-content{
+        width: 250.33px;
+        height: 64.25;
+        padding: 0px 15px 0px 15px;
+    }
+    
+    .carte-titre{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    width: 55%;
+    height: 19px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    }
+    
+    .carte-sous-titre {
         font-size: 14px;
+        font-weight: 400;
+        line-height: 16.44px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    
+    /****** Populaires ***********/
+    .populaires {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        
+    }
+    
+    .populaires-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .populaires-cards{
+        display: flex;
+        flex-direction: row;
+        width: 93,5%;
+    }
+    .populaires-cards a {
+        display: flex;
+        width: 100%;
     }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
+    .populaires-cards .card {
+        display: flex;
+        width: 86.8%;
+        height: 116px;
+        margin-top: 33px;
     }
+
+    #card1{
+        width: 90%;
+        
+    }
+    #card2{
+        width: 90%;
+        
+    }
+    #card3{
+        width: 90%;
+        
+    }
+    
+    .populaires-cards img {
+        width: 33%;
+        height: 116px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    .populaires-cards .card-content {
+        width: 67%;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    
+    .populaires-cards .card-title {
+        margin-top: 7px;
+        margin-bottom: 4px;
+    }
+    
+    .populaires-cards .card-subtitle {
+        margin: 0;
+    }
+    
+    .populaires-cards .card-rating {
+        margin-bottom: 5px;
+    }
+    /****** Activités à marseille ***********/
+    .section-activites {
+        height: 559.02px;
+        padding-top: 30px;
+        margin-bottom: 60px;
+      
+        
+    }
+    .section-activites h2 {
+        height: 30.02px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25.83px;
+    }
+    .section-activites a{
+        width: 23.2%;
+    }
+    .activites{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 60px;
+        flex-wrap: nowrap;
+    }
+    
+    .carte-activites {
+        width: 100%;
+        height: 310px;
+        border-radius: 20px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    }
+    .carte-activites img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+    .carte-actes h3{
+        padding-left: 15px;
+        
+    }
+    /******footer ***********/
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    width: 93.05%;
+    gap: 110px;
+    padding-left: 30px;
+}
+
+footer div {
+    flex-direction: column;/* rappel : cette commande s'applique sur l'élément que je veux altérer*/
+    display: flex;
+    gap: 15px;
+
+}
+
+footer div p {
+    margin: 1px;
+}
+
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px)  and (min-width : 1px){
     /* ... */
+    .main-container {
+        width: 100%;
+        max-width: 370px;
+        padding: 0 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .enTete {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 61.09px;
+        height: 19px;
+        padding:30px 50px 30px 50px;
+        
+    }
+    
+    .menu_de_navi {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+    
+    li {
+        display: flex;
+        list-style-type : none;
+        justify-content: space-between;
+    }
+    
+    .menu_de_navi div {
+        padding : 5px;
+        margin: 15px;
+    }
+    
+    .menu_de_navi div:hover {
+        padding-top : 10px;
+        
+        color: rgb(118, 161, 226);
+        border-top: 2px solid;
+        border-top-color: rgb(103, 148, 216) ;
+       
+    }
+    
+    
+    .liste_navi_1{
+        width:113px; 
+        height:35px;
+    }
+    
+    .liste_navi_2 {
+        width:63px; 
+        height:35px;
+    }
+    
+    /***** info group******/
+    .info_group{
+        display: flex;
+        flex-direction: column;
+        gap:35px;
+        margin-bottom : 30px;
+    
+    }
+    .headline h1 {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 500px; /* l'épaisseur ne changera pas en dessous de 500px ça me permet de garder la même forme*/
+        max-width: 500px
+    }
+    .search_bar {
+        display: flex;
+    }
+    .search_bar button {
+       /*display: none; /* permet de ne pas afficher un élément*/
+        border-radius:15px;
+        border: 1px;
+        background-color: 
+        #0065FC;
+        padding: 15px 16px 15px 16px;
+        width: 49px;
+        height: 49px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        
+    }
+    .search_bar button::before{ 
+        /* grâce au ::before, je peux afficher un truc avant celui qui était prévu à l'origine. je peux donc occulter le mot entre <p></p> */
+        content: '\f002'; /*code unicode pour la loupe*/
+        display: block;
+        font-family: 'fontAwesome';
+       width: 100%;
+       height: 100%;
+    }
+    .search_bar button p {
+        display: none;
+    }
+    .search_bar input {
+        width: 335px;
+        height: 49px;
+        border-right: 0px;
+        border: 1px solid #F2F2F2
+    }
+    .search_bar i {
+        width: 90px;
+        height: 49px;
+        border-radius: 15px 0px 0px 15px;
+        border: 1px;
+        background-color: #F2F2F2;
+    }
+    .fa-solid.fa-location-dot::before {
+       
+        content: "\f3c5";
+        display: flex;
+        width: 50%;
+        font-size: 18px;
+        color: black;
+        position: relative;
+        left: 20px;
+        top: 13px;
+    }
+    .filter_bar {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .filter_bar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        min-width: 351px;
+        max-width: 511px
+    }
+        
+    input::placeholder{
+    
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #000000;
+    }
+    .filter_bar ul li {
+        list-style: none;
+        border: 2px solid;
+        border-radius: 25px;
+        border-color: #D9D9D9;
+        padding: 15px 19px 15px 19px;
+        height: 20px;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 19.96px;
+        display: flex;
+        justify-content: left;
+        gap: 15px;
+        white-space: nowrap;
+    }
+    .filter_bar ul li:hover{
+        background-color: #DEEBFF;
+    }
+    
+    .filter_bar ul li:nth-child(1){
+        width: 19%;
+        flex-grow: 1;
+        min-width: 128px;
+        max-width: 129px;
+        
+    }
+    .filter_bar ul li:nth-child(2){
+        width: 16%;
+        flex-grow: 1;
+        min-width: 128px;
+        max-width: 129px;
+        
+    }
+    .filter_bar ul li:nth-child(3){
+        width: 19%;
+        flex-grow: 1;
+        min-width: 128px;
+        max-width: 129px;
+        
+    }
+    .filter_bar ul li:nth-child(4){
+        width: 19%;
+        flex-grow: 1;
+        min-width: 128px;
+        max-width: 129px;
+        
+    }
+    
+    .filter_bar p{
+        width:54px;
+        height: 21px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.13px;
+        padding-bottom: 10px ;
+        padding-left: 0;
+    }
+    
+    .infobar{
+        display: flex;
+        gap:5px;
+    }
+
+    .infobar span {
+        min-width: 302px;
+        max-width:310px ;
+    }
+    /****** Hebergements And Populaires ***********/
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin-bottom: 90px;
+    }
+    
+    /*.hebergements-and-populaires section {
+        background-color: white;
+        border-radius: 20px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    
+    /****** Hebergements ***********/
+    .hebergements {
+        width: 100%;
+        background-color:blueviolet;
+       
+    }
+    .column1{
+        width: ;
+        display: flex;
+       
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+    }
+    
+    .carte {
+        width: 335px ;
+        height: 207px;
+       
+        border-radius : 20px;
+        padding: 4px 4px 5px 4px;
+    /*le secret pour que mmon image suffise comme sur la maquette se trouvait dans le padding
+    de la carte*/
+        
+        background-color: #FFFFFF;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+       
+    }
+    
+    .carte img {
+        width: 100%;
+        height:124px ;
+        border-top-left-radius:20px ;
+        border-top-right-radius: 20px;
+        /*object-fit: fill;*/
+        object-fit: cover;
+    }
+    .carte-content{
+        width: 250.33px;
+        height: 64.25;
+        padding: 0px 15px 0px 15px;
+    }
+    
+    .carte-titre{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    width: 55%;
+    height: 19px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    }
+    
+    .carte-sous-titre {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.44px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    
+    /****** Populaires ***********/
+    .populaires {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        
+    }
+    
+    .populaires-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .populaires-cards{
+        display: flex;
+        flex-direction: column;
+        width: 93,5%;
+    }
+    .populaires-cards .card {
+        display: flex;
+        width: 86.8%;
+        height: 116px;
+        margin-top: 33px;
+    }
+    
+    .populaires-cards img {
+        width: 33%;
+        height: 116px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    .populaires-cards .card-content {
+        width: 67%;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    
+    .populaires-cards .card-title {
+        margin-top: 7px;
+        margin-bottom: 4px;
+    }
+    
+    .populaires-cards .card-subtitle {
+        margin: 0;
+    }
+    
+    .populaires-cards .card-rating {
+        margin-bottom: 5px;
+    }
+    /****** Activités à marseille ***********/
+    .section-activites {
+        height: 559.02px;
+        padding-top: 30px;
+        margin-bottom: 60px;
+      
+        
+    }
+    .section-activites h2 {
+        height: 30.02px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25.83px;
+    }
+    .section-activites a{
+        width: 23.2%;
+    }
+    .activites{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 60px;
+        flex-direction: column;
+    }
+    .activites a{
+        width: 100%;
+    }
+    
+    .carte-activites {
+        width: 315px;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    }
+    .carte-activites img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+    .carte-actes h3{
+        padding-left: 15px;
+        
+    }
+    /******footer ***********/
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 364px;
+        background-color: #F2F2F2;
+        width: 93.05%;
+        /* height: 163px; */
+        gap: 40px;
+        padding-left: 30px;
+    }
+
+footer div {
+    flex-direction: column;/* rappel : cette commande s'applique sur l'élément que je veux altérer*/
+    display: flex;
+    gap: 15px;
+
+}
+
+footer div p {
+    margin: 1px;
+}
+
 }
