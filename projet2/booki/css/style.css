@@ -448,7 +448,7 @@ footer div p {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px) {
     .enTete {
         display: flex;
         justify-content: space-between;
@@ -910,6 +910,7 @@ footer div p {
     }
     .search_bar {
         display: flex;
+        width: 355px;
     }
     .search_bar button {
        /*display: none; /* permet de ne pas afficher un élément*/
@@ -978,7 +979,8 @@ footer div p {
     }
         
     input::placeholder{
-    
+    position : relative;
+    left: 10px;
         font-size: 1.5em;
         font-weight: 700;
         color: #000000;
