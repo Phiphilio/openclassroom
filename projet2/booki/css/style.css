@@ -86,7 +86,7 @@ body {
     flex-wrap: wrap;
    
 }
-
+@media (min-width :1025px){
 
 /****** header ******/
 .enTete {
@@ -443,7 +443,7 @@ footer div {
 footer div p {
     margin: 1px;
 }
-
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -835,11 +835,14 @@ footer div p {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px)  and (min-width : 1px){
     /* ... */
+    body{
+        margin-left: 50px;
+    }
     .main-container {
         width: 100%;
         max-width: 370px;
         padding: 0 50px;
-        box-sizing: border-box;
+        box-sizing:content-box;
         display: flex;
         flex-direction: column;
     }
@@ -1070,7 +1073,7 @@ footer div p {
     /****** Hebergements ***********/
     .hebergements {
         width: 100%;
-        background-color:blueviolet;
+        background-color:white;
        
     }
     .column1{
@@ -1085,9 +1088,9 @@ footer div p {
     }
     
     .carte {
-        width: 335px ;
-        height: 207px;
-       
+        width: 300px ;
+        height: 209px;
+       box-sizing: border-box;
         border-radius : 20px;
         padding: 4px 4px 5px 4px;
     /*le secret pour que mmon image suffise comme sur la maquette se trouvait dans le padding
@@ -1137,7 +1140,7 @@ footer div p {
         display: flex;
         flex-direction: column;
         margin-top: 30px;
-        
+        background-color: var(--main-bg-color);
     }
     
     .populaires-title {
@@ -1234,6 +1237,7 @@ footer div p {
     footer {
         display: flex;
         flex-wrap: wrap;
+        box-sizing: content-box;
         min-width: 364px;
         background-color: #F2F2F2;
         width: 93.05%;
