@@ -399,11 +399,12 @@ white-space: nowrap;
 .section-activites a{
     width: 23.2%;
 }
-.activites{
+.activites {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 25px;
     margin-bottom: 60px;
+    width: 95.5%;
 }
 
 .carte-activites {
