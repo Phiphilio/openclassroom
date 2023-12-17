@@ -91,7 +91,6 @@ body {
     min-width donne la plus petite largeur d'écran, celle que à partir de laquelle mon code ne va pas plus bas
     max-witdh donne la plus grande largeur d'écran, celle à partir de laquelle mon code ne peut aller plus haut
     */
-
 /****** header ******/
 .enTete {
     display: flex;
@@ -400,6 +399,13 @@ white-space: nowrap;
 .section-activites a{
     width: 23.2%;
 }
+.activites{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
 .carte-activites {
     width: 23.25%;
     height: 439px;
@@ -407,13 +413,6 @@ white-space: nowrap;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
-.carte-activites{
-    width: 100%;
-    height: 439px;
-    border-radius: 20px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-
-}
 .carte-activites img {
     width: 100%;
     height: 380px;
@@ -773,10 +772,11 @@ footer div p {
     }
     /****** Activités à marseille ***********/
     .section-activites {
-        
+        height: 559.02px;
         padding-top: 30px;
         margin-bottom: 60px;
-        width: 93.05%;
+      
+        
     }
     .section-activites h2 {
         height: 30.02px;
@@ -787,17 +787,16 @@ footer div p {
     .section-activites a{
         width: 23.2%;
     }
-    .activites {
+    .activites{
         display: flex;
-        flex-wrap: wrap;
-        gap: 25px;
+        gap: 30px;
         margin-bottom: 60px;
-        width: 95.5%;
+        flex-wrap: nowrap;
     }
     
     .carte-activites {
-        width: 23.25%;
-        height: 439px;
+        width: 100%;
+        height: 310px;
         border-radius: 20px;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     }
