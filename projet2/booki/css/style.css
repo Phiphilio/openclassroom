@@ -773,11 +773,10 @@ footer div p {
     }
     /****** Activités à marseille ***********/
     .section-activites {
-        height: 559.02px;
+        
         padding-top: 30px;
         margin-bottom: 60px;
-      
-        
+        width: 93.05%;
     }
     .section-activites h2 {
         height: 30.02px;
