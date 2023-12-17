@@ -87,6 +87,10 @@ body {
    
 }
 @media (min-width :1025px){
+  /*rappel : 
+    min-width donne la plus petite largeur d'écran, celle que à partir de laquelle mon code ne va pas plus bas
+    max-witdh donne la plus grande largeur d'écran, celle à partir de laquelle mon code ne peut aller plus haut
+    */
 
 /****** header ******/
 .enTete {
@@ -396,11 +400,11 @@ white-space: nowrap;
 .section-activites a{
     width: 23.2%;
 }
-.activites{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 60px;
+.carte-activites {
+    width: 23.25%;
+    height: 439px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .carte-activites{
@@ -449,6 +453,7 @@ footer div p {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
+  
     .enTete {
         display: flex;
         justify-content: space-between;
@@ -881,12 +886,12 @@ footer div p {
         padding-top : 10px;
         
         color: rgb(118, 161, 226);
-        border-top: 2px solid;
-        border-top-color: rgb(103, 148, 216) ;
+        border-bottom: 2px solid;
+        border-bottom-color: rgb(103, 148, 216) ;
        
     }
-    
-    
+   
+
     .liste_navi_1{
         width:113px; 
         height:35px;
