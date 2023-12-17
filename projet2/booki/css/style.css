@@ -142,12 +142,12 @@ li {
 }
 
 /***** info group******/
-.info_group{
+.info_group {
     display: flex;
     flex-direction: column;
-    gap:35px;
-    margin-bottom : 30px;
-
+    gap: 35px;
+    margin-bottom: 30px;
+    width: 93.05%;
 }
 .search_bar {
     display: flex;
