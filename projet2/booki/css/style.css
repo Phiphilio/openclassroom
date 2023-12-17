@@ -265,7 +265,7 @@ input::placeholder{
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
-    
+    width: 93.05%;
 }
 
 .hebergements-and-populaires section {
