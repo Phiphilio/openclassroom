@@ -1088,19 +1088,17 @@ body {
                 background-color:white;
             
             }
-            .column1{
-                
+            .column1 {
                 display: flex;
-            
                 flex-direction: column;
                 gap: 20px;
                 margin-top: 20px;
                 margin-bottom: 20px;
-            
+                align-items: center;
             }
             
             .carte {
-                width: 300px ;
+                width: 90.5% ;
                 height: 209px;
             box-sizing: border-box;
                 border-radius : 20px;
@@ -1160,10 +1158,12 @@ body {
                 justify-content: space-between;
                 align-items: center;
             }
-            .populaires-cards{
+            .populaires-cards {
                 display: flex;
                 flex-direction: column;
                 width: 93.5%;
+                padding-left: 20px;
+                padding-bottom: 20px;
             }
             .populaires-cards .card {
                 display: flex;
