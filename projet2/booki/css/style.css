@@ -845,7 +845,7 @@ body {
       }
 
         /* Small devices (phones, less than 768px) */
-        @media (max-width: 767.98px)  and (min-width : 1px){
+        @media (max-width: 767.98px)  {
             /* ... */
             body{
                 margin-left: 50px;
@@ -1247,13 +1247,12 @@ body {
             footer {
                 display: flex;
                 flex-wrap: wrap;
-                box-sizing: content-box;
-                min-width: 364px;
+                box-sizing: border-box;
                 background-color: #F2F2F2;
-                width: 93.05%;
-                /* height: 163px; */
+                width: 100%;
                 gap: 40px;
                 padding-left: 30px;
+                padding-bottom: 30px;
             }
 
         footer div {
