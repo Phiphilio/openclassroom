@@ -95,6 +95,7 @@ body {
     flex-wrap: wrap;
 
 }
+
 /* mise en place de la partie du code qui se répète dans les 3 types d'écrans*/
 /*menu de navigation qui comprend le logo et la navigation*/
 .enTete {
@@ -135,6 +136,7 @@ li {
     border-top-color: rgb(103, 148, 216);
 
 }
+
 .liste_navi_1 {
     width: 113px;
     height: 35px;
@@ -219,22 +221,24 @@ li {
 .infobar div {
     border-radius: 50%;
     border: 1px solid black;
-    position : relative;
+    position: relative;
     bottom: 20px;
 }
 
 .infobar div p {
     padding: 1px 20px 1px 20px;
-    color: #0065FC;;
+    color: #0065FC;
+    ;
 }
 
- /****** Activités à marseille ***********/
- .section-activites h2 {
+/****** Activités à marseille ***********/
+.section-activites h2 {
     height: 30.02px;
     font-weight: 700;
     font-size: 22px;
     line-height: 25.83px;
 }
+
 .section-activites a {
     width: 23.2%;
 }
@@ -262,7 +266,7 @@ footer div p {
     /****** header ******/
 
 
-    
+
 
     .filter_bar {
         display: flex;
@@ -343,6 +347,7 @@ footer div p {
         padding: 30px;
         box-sizing: border-box;
     }
+
     .hebergements-and-populaires {
         display: flex;
         justify-content: space-between;
@@ -351,7 +356,7 @@ footer div p {
         min-width: 1130px;
     }
 
-  
+
 
     /****** Hebergements ***********/
     .hebergements {
@@ -600,16 +605,17 @@ footer div p {
         padding-left: 0;
     }
 
- 
+
 
     /****** Hebergements And Populaires ***********/
-   
+
     .hebergements-and-populaires section {
         background-color: var(--main-bg-color);
         border-radius: 20px;
         padding: 30px;
         box-sizing: border-box;
     }
+
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column;
@@ -618,7 +624,7 @@ footer div p {
         min-width: 880px;
     }
 
-   
+
     /****** Hebergements ***********/
     .hebergements {
         width: 100%;
@@ -838,7 +844,7 @@ footer div p {
 
 
     .menu_de_navi div {
-        padding:  5px 5px 0px 5px;
+        padding: 5px 5px 0px 5px;
         /* j'ai supprimé le padding-bottom pour que la ligne blanche invisible et la ligne bleue soient conformes à la maquette ne soit*/
         margin: 15px;
         border-bottom: 2px solid white;
@@ -855,7 +861,7 @@ footer div p {
 
 
     /***** info group******/
-   
+
 
     .headline h1 {
         display: flex;
@@ -1019,9 +1025,9 @@ footer div p {
         gap: 30px;
     }
 
-   
-            
-            /****** Hebergements ***********/
+
+
+    /****** Hebergements ***********/
     .hebergements {
         width: 100%;
         background-color: white;
@@ -1151,7 +1157,7 @@ footer div p {
         margin-bottom: 60px;
         min-width: 369px;
     }
-  
+
 
     .activites {
         display: flex;
