@@ -173,8 +173,10 @@ li {
     font-size: 18px;
     font-weight: 700;
 }
+
 .search_bar button::before {
-    content: 'recherche'; /*plutot que de l'écrire dans le html, j'ai préféré l'écrire ici afin de pouvoir le faire disparaitre dans la version mobile de mon site*/
+    content: 'recherche';
+    /*plutot que de l'écrire dans le html, j'ai préféré l'écrire ici afin de pouvoir le faire disparaitre dans la version mobile de mon site*/
 }
 
 .search_bar button p {
