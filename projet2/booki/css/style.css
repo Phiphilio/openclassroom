@@ -216,6 +216,17 @@ li {
     gap: 5px;
 }
 
+.infobar div {
+    border-radius: 50%;
+    border: 1px solid black;
+    position : relative;
+    bottom: 20px;
+}
+
+.infobar div p {
+    padding: 1px 20px 1px 20px;
+    color: #0065FC;;
+}
 
  /****** Activités à marseille ***********/
  .section-activites h2 {
