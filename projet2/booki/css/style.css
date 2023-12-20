@@ -135,7 +135,60 @@ li {
     border-top-color: rgb(103, 148, 216);
 
 }
+.liste_navi_1 {
+    width: 113px;
+    height: 35px;
+}
 
+.liste_navi_2 {
+    width: 63px;
+    height: 35px;
+}
+
+/***** info group******/
+
+.search_bar {
+    display: flex;
+}
+
+.info_group {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 30px;
+    width: 93.05%;
+}
+
+.search_bar button {
+    border-radius: 0px 15px 15px 0px;
+    border: 1px;
+    background-color:
+        #0065FC;
+    padding: 15px 16px 15px 16px;
+    width: 132px;
+    height: 49px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.search_bar button p {
+    position: relative;
+    bottom: 19px;
+}
+
+
+.search_bar button p {
+    position: relative;
+    bottom: 19px;
+}
+
+
+.search_bar input {
+    width: 250px;
+    height: 49px;
+}
 
 @media (min-width :1025px) {
 
@@ -146,51 +199,8 @@ li {
     /****** header ******/
 
 
-    .liste_navi_1 {
-        width: 113px;
-        height: 35px;
-    }
-
-    .liste_navi_2 {
-        width: 63px;
-        height: 35px;
-    }
-
+    
     /***** info group******/
-    .info_group {
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-        margin-bottom: 30px;
-        width: 93.05%;
-    }
-
-    .search_bar {
-        display: flex;
-    }
-
-    .search_bar button {
-        border-radius: 0px 15px 15px 0px;
-        border: 1px;
-        background-color:
-            #0065FC;
-        padding: 15px 16px 15px 16px;
-        width: 132px;
-        height: 49px;
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
-    }
-
-    .search_bar button p {
-        position: relative;
-        bottom: 19px;
-    }
-
-    .search_bar input {
-        width: 250px;
-        height: 49px;
-    }
 
     .search_bar i {
         width: 50px;
@@ -495,54 +505,10 @@ li {
 
 
 
-    .liste_navi_1 {
-        width: 113px;
-        height: 35px;
-    }
-
-    .liste_navi_2 {
-        width: 63px;
-        height: 35px;
-    }
-
     /***** info group******/
-    .info_group {
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-        margin-bottom: 30px;
-
-    }
 
     .title-section {
         white-space: nowrap;
-    }
-
-    .search_bar {
-        display: flex;
-    }
-
-    .search_bar button {
-        border-radius: 0px 15px 15px 0px;
-        border: 1px;
-        background-color:
-            #0065FC;
-        padding: 15px 16px 15px 16px;
-        width: 132px;
-        height: 49px;
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
-    }
-
-    .search_bar button p {
-        position: relative;
-        bottom: 19px;
-    }
-
-    .search_bar input {
-        width: 250px;
-        height: 49px;
     }
 
     .search_bar i {
@@ -898,6 +864,7 @@ li {
 
     .menu_de_navi div {
         padding:  5px 5px 0px 5px;
+        /* j'ai supprimé le padding-bottom pour que la ligne blanche invisible et la ligne bleue soient conformes à la maquette ne soit*/
         margin: 15px;
         border-bottom: 2px solid white;
     }
@@ -911,24 +878,9 @@ li {
     }
 
 
-    .liste_navi_1 {
-        width: 113px;
-        height: 35px;
-    }
-
-    .liste_navi_2 {
-        width: 63px;
-        height: 35px;
-    }
 
     /***** info group******/
-    .info_group {
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-        margin-bottom: 30px;
-
-    }
+   
 
     .headline h1 {
         display: flex;
