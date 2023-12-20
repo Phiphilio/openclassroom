@@ -190,6 +190,65 @@ li {
     height: 49px;
 }
 
+
+.search_bar i {
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px;
+    background-color: #F2F2F2;
+}
+
+.fa-solid.fa-location-dot::before {
+    /* l'icone est une classe, donc je l'ai appelé, puis j'ai utilisé ::before qui me permet de gérer le dit icone*/
+    content: "\f3c5";
+    display: flex;
+    width: 50%;
+    font-size: 18px;
+    color: black;
+    position: relative;
+    left: 20px;
+    top: 13px;
+}
+
+.infobar {
+    display: flex;
+    gap: 5px;
+}
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+ /****** Activités à marseille ***********/
+ .section-activites h2 {
+    height: 30.02px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.83px;
+}
+.section-activites a {
+    width: 23.2%;
+}
+
+/**footer**/
+
+footer div {
+    flex-direction: column;
+    /* rappel : cette commande s'applique sur l'élément que je veux altérer*/
+    display: flex;
+    gap: 15px;
+
+}
+
+footer div p {
+    margin: 1px;
+}
+
 @media (min-width :1025px) {
 
     /*rappel : 
@@ -201,26 +260,6 @@ li {
 
     
     /***** info group******/
-
-    .search_bar i {
-        width: 50px;
-        height: 49px;
-        border-radius: 15px 0px 0px 15px;
-        border: 1px;
-        background-color: #F2F2F2;
-    }
-
-    .fa-solid.fa-location-dot::before {
-        /* l'icone est une classe, donc je l'ai appelé, puis j'ai utilisé ::before qui me permet de gérer le dit icone*/
-        content: "\f3c5";
-        display: flex;
-        width: 50%;
-        font-size: 18px;
-        color: black;
-        position: relative;
-        left: 20px;
-        top: 13px;
-    }
 
     .filter_bar {
         display: flex;
@@ -293,10 +332,6 @@ li {
         padding: 15px;
     }
 
-    .infobar {
-        display: flex;
-        gap: 5px;
-    }
 
     /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires {
@@ -307,12 +342,7 @@ li {
         min-width: 1130px;
     }
 
-    .hebergements-and-populaires section {
-        background-color: var(--main-bg-color);
-        border-radius: 20px;
-        padding: 30px;
-        box-sizing: border-box;
-    }
+  
 
     /****** Hebergements ***********/
     .hebergements {
@@ -429,20 +459,9 @@ li {
     .section-activites {
         padding-top: 30px;
         margin-bottom: 60px;
-        /* width: 93.05%; */
         min-width: 1210px;
     }
 
-    .section-activites h2 {
-        height: 30.02px;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 25.83px;
-    }
-
-    .section-activites a {
-        width: 23.2%;
-    }
 
     .activites {
         display: flex;
@@ -483,17 +502,6 @@ li {
         padding-left: 30px;
     }
 
-    footer div {
-        flex-direction: column;
-        /* rappel : cette commande s'applique sur l'élément que je veux altérer*/
-        display: flex;
-        gap: 15px;
-
-    }
-
-    footer div p {
-        margin: 1px;
-    }
 
 }
 
@@ -511,25 +519,6 @@ li {
         white-space: nowrap;
     }
 
-    .search_bar i {
-        width: 50px;
-        height: 49px;
-        border-radius: 15px 0px 0px 15px;
-        border: 1px;
-        background-color: #F2F2F2;
-    }
-
-    .fa-solid.fa-location-dot::before {
-        /* l'icone est une classe, donc je l'ai appelé, puis j'ai utilisé ::before qui me permet de gérer le dit icone*/
-        content: "\f3c5";
-        display: flex;
-        width: 50%;
-        font-size: 18px;
-        color: black;
-        position: relative;
-        left: 20px;
-        top: 13px;
-    }
 
     .filter_bar {
         display: flex;
@@ -602,10 +591,7 @@ li {
         padding-left: 0;
     }
 
-    .infobar {
-        display: flex;
-        gap: 5px;
-    }
+ 
 
     /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires {
@@ -616,13 +602,7 @@ li {
         min-width: 880px;
     }
 
-    .hebergements-and-populaires section {
-        background-color: var(--main-bg-color);
-        border-radius: 20px;
-        padding: 30px;
-        box-sizing: border-box;
-    }
-
+   
     /****** Hebergements ***********/
     .hebergements {
         width: 100%;
@@ -772,16 +752,6 @@ li {
         min-width: 885px;
     }
 
-    .section-activites h2 {
-        height: 30.02px;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 25.83px;
-    }
-
-    .section-activites a {
-        width: 23.2%;
-    }
 
     .activites {
         display: flex;
@@ -822,17 +792,6 @@ li {
         min-width: 818px;
     }
 
-    footer div {
-        flex-direction: column;
-        /* rappel : cette commande s'applique sur l'élément que je veux altérer*/
-        display: flex;
-        gap: 15px;
-
-    }
-
-    footer div p {
-        margin: 1px;
-    }
 
 }
 
@@ -940,17 +899,6 @@ li {
         background-color: #F2F2F2;
     }
 
-    .fa-solid.fa-location-dot::before {
-
-        content: "\f3c5";
-        display: flex;
-        width: 50%;
-        font-size: 18px;
-        color: black;
-        position: relative;
-        left: 20px;
-        top: 13px;
-    }
 
     .filter_bar {
         display: flex;
@@ -1039,10 +987,7 @@ li {
         padding-left: 0;
     }
 
-    .infobar {
-        display: flex;
-        gap: 5px;
-    }
+
 
     .infobar span {
         min-width: 302px;
@@ -1058,12 +1003,7 @@ li {
         gap: 30px;
     }
 
-    /*.hebergements-and-populaires section {
-                background-color: white;
-                border-radius: 20px;
-                padding: 30px;
-                box-sizing: border-box;
-            }
+   
             
             /****** Hebergements ***********/
     .hebergements {
@@ -1194,17 +1134,7 @@ li {
         padding-top: 30px;
         margin-bottom: 60px;
     }
-
-    .section-activites h2 {
-        height: 30.02px;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 25.83px;
-    }
-
-    .section-activites a {
-        width: 23.2%;
-    }
+  
 
     .activites {
         display: flex;
@@ -1251,16 +1181,5 @@ li {
         padding-bottom: 30px;
     }
 
-    footer div {
-        flex-direction: column;
-        /* rappel : cette commande s'applique sur l'élément que je veux altérer*/
-        display: flex;
-        gap: 15px;
-
-    }
-
-    footer div p {
-        margin: 1px;
-    }
 
 }
