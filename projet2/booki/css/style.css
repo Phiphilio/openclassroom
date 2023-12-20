@@ -216,13 +216,6 @@ li {
     gap: 5px;
 }
 
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-}
 
  /****** Activités à marseille ***********/
  .section-activites h2 {
@@ -259,7 +252,6 @@ footer div p {
 
 
     
-    /***** info group******/
 
     .filter_bar {
         display: flex;
@@ -334,6 +326,12 @@ footer div p {
 
 
     /****** Hebergements And Populaires ***********/
+    .hebergements-and-populaires section {
+        background-color: var(--main-bg-color);
+        border-radius: 20px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
     .hebergements-and-populaires {
         display: flex;
         justify-content: space-between;
@@ -570,7 +568,7 @@ footer div p {
     }
 
     .filter_bar ul li:nth-child(2) {
-        width: 14%;
+        width: 10%;
     }
 
     .filter_bar ul li:nth-child(3) {
@@ -594,6 +592,13 @@ footer div p {
  
 
     /****** Hebergements And Populaires ***********/
+   
+    .hebergements-and-populaires section {
+        background-color: var(--main-bg-color);
+        border-radius: 20px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column;
@@ -1009,7 +1014,7 @@ footer div p {
     .hebergements {
         width: 100%;
         background-color: white;
-
+        min-width: 365px;
     }
 
     .column1 {
@@ -1088,6 +1093,7 @@ footer div p {
         display: flex;
         flex-direction: column;
         width: 93.5%;
+        min-width: 344px;
         padding-left: 20px;
         padding-bottom: 20px;
     }
@@ -1130,9 +1136,9 @@ footer div p {
 
     /****** Activités à marseille ***********/
     .section-activites {
-        /* height: 559.02px; */
         padding-top: 30px;
         margin-bottom: 60px;
+        min-width: 369px;
     }
   
 
@@ -1176,10 +1182,10 @@ footer div p {
         box-sizing: border-box;
         background-color: #F2F2F2;
         width: 100%;
+        min-width: 339px;
         gap: 40px;
         padding-left: 30px;
         padding-bottom: 30px;
     }
-
 
 }
