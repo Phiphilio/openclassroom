@@ -897,12 +897,13 @@ li {
 
 
     .menu_de_navi div {
-        padding: 5px;
+        padding:  5px 5px 0px 5px;
         margin: 15px;
+        border-bottom: 2px solid white;
     }
 
     .menu_de_navi div:hover {
-
+        border-top: 2px solid white;
         color: rgb(118, 161, 226);
         border-bottom: 2px solid;
         border-bottom-color: rgb(103, 148, 216);
