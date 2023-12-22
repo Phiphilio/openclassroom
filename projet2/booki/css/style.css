@@ -179,11 +179,6 @@ li {
     /*plutot que de l'écrire dans le html, j'ai préféré l'écrire ici afin de pouvoir le faire disparaitre dans la version mobile de mon site*/
 }
 
-.search_bar button p {
-    position: relative;
-    bottom: 19px;
-}
-
 
 .search_bar button p {
     position: relative;
@@ -209,7 +204,7 @@ li {
     /* l'icone est une classe, donc je l'ai appelé, puis j'ai utilisé ::before qui me permet de gérer le dit icone*/
     content: "\f3c5";
     display: flex;
-    width: 50%;
+    width: 7%;
     font-size: 18px;
     color: black;
     position: relative;
@@ -812,17 +807,17 @@ footer div p {
         display: flex;
         flex-wrap: nowrap;
         background-color: #F2F2F2;
-        width: 93.05%;
+        width: 888px;
         gap: 100px;
         padding-left: 30px;
-        min-width: 818px;
+        min-width: 887px;
     }
 
 
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 
     /* ... */
     body {
@@ -879,6 +874,18 @@ footer div p {
         display: flex;
         width: 355px;
     }
+    .fa-solid.fa-location-dot::before {
+        content: "\f3c5";
+        display: flex;
+        width: 7%;
+        font-size: 18px;
+        color: black;
+        position: relative;
+        left: 20px;
+        top: 13px;
+        align-items: flex-start;
+        justify-content: center;
+    }
 
     .search_bar button {
         /*display: none; /* permet de ne pas afficher un élément*/
@@ -916,7 +923,7 @@ footer div p {
     }
 
     .search_bar i {
-        width: 90px;
+        width: 50px;
         height: 49px;
         border-radius: 15px 0px 0px 15px;
         border: 1px;
