@@ -514,6 +514,7 @@ footer div p {
         min-width: 1063px;
         gap: 190px;
         padding-left: 30px;
+        width: 1130px;
     }
 
 
@@ -821,14 +822,20 @@ footer div p {
 @media (max-width: 768px) {
 
     /* ... */
+    html{
+        width: 100%;
+        overflow-x: hidden; /*donc le problème derrière le décalage de tout mon site en version mobile était juste là
+        dans la valeur hidden*/
+    }
     body {
-        margin-left: 50px;
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0px;
     }
 
     .main-container {
         width: 100%;
-        max-width: 370px;
-        padding: 0 50px;
+        padding: 0;
         box-sizing: content-box;
         display: flex;
         flex-direction: column;
@@ -840,7 +847,6 @@ footer div p {
         justify-content: space-between;
         align-items: center;
     }
-
 
 
     .menu_de_navi div {
@@ -866,9 +872,10 @@ footer div p {
     .headline h1 {
         display: flex;
         flex-wrap: wrap;
-        min-width: 500px;
+        min-width: 342px;
         /* l'épaisseur ne changera pas en dessous de 500px ça me permet de garder la même forme*/
-        max-width: 500px
+        max-width: 343px;
+        font-size:22px;
     }
 
     .search_bar {
