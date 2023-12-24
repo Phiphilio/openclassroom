@@ -527,12 +527,14 @@ footer div p {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
 
-    html{
+    html {
         width: 100%;
-        overflow-x: hidden; /*donc le problème derrière le décalage de tout mon site en version mobile était juste là
+        overflow-x: hidden;
+        /*donc le problème derrière le décalage de tout mon site en version mobile était juste là
         dans la valeur hidden*/
         margin: 0px;
     }
+
     body {
         width: 100%;
         overflow-x: hidden;
@@ -834,12 +836,14 @@ footer div p {
 @media (max-width: 768px) {
 
     /* ... */
-    html{
+    html {
         width: 100%;
-        overflow-x: hidden; /*donc le problème derrière le décalage de tout mon site en version mobile était juste là
+        overflow-x: hidden;
+        /*donc le problème derrière le décalage de tout mon site en version mobile était juste là
         dans la valeur hidden*/
         margin: 0px;
     }
+
     body {
         width: 100%;
         overflow-x: hidden;
@@ -861,14 +865,20 @@ footer div p {
         align-items: center;
     }
 
+    .enTete:nth-child(1) {
+        border-bottom: 2px solid #F2F2F2;
+        width: 375px;
+    }
+
     nav {
         width: 100%;
+
     }
+
     .menu_de_navi div {
         padding: 5px 5px 0px 5px;
         /* j'ai supprimé le padding-bottom pour que la ligne blanche invisible et la ligne bleue soient conformes à la maquette ne soit*/
-        margin: 15px;
-        border-bottom: 2px solid white;
+        margin: 15px 15px 0px 15px;
     }
 
     .menu_de_navi div:hover {
@@ -883,16 +893,17 @@ footer div p {
 
     /***** info group******/
 
-    .headline{
+    .headline {
         margin-left: 15px;
     }
+
     .headline h1 {
         display: flex;
         flex-wrap: wrap;
         min-width: 342px;
         /* l'épaisseur ne changera pas en dessous de 500px ça me permet de garder la même forme*/
         max-width: 343px;
-        font-size:22px;
+        font-size: 22px;
     }
 
     .search_bar {
@@ -972,7 +983,7 @@ footer div p {
         margin-top: 0;
         margin-bottom: 0;
         min-width: 351px;
-        
+
     }
 
     input::placeholder {
@@ -1036,22 +1047,23 @@ footer div p {
 
     }
 
-   .filter_bar p {
-    width: 54px;
-    height: 21px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21.13px;
-    padding-bottom: 10px;
-    padding-left: 0;
-    margin-left: 10px;
-}
+    .filter_bar p {
+        width: 54px;
+        height: 21px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.13px;
+        padding-bottom: 10px;
+        padding-left: 0;
+        margin-left: 10px;
+    }
 
-.infobar {
-    display: flex;
-    gap: 5px;
-    margin-left: 10px;
-}
+    .infobar {
+        display: flex;
+        gap: 5px;
+        margin-left: 10px;
+    }
+
     .infobar span {
         min-width: 302px;
         max-width: 310px;
@@ -1074,7 +1086,9 @@ footer div p {
         background-color: white;
         min-width: 365px;
     }
-    .hebergements h2,  .hebergements h3 {
+
+    .hebergements h2,
+    .hebergements h3 {
         margin-left: 15px;
     }
 
