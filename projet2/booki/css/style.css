@@ -51,7 +51,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    /*padding: 0 50px;*/
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -515,9 +515,8 @@ footer div p {
         min-width: 1063px;
         gap: 190px;
         padding-left: 30px;
-        width: 1130px;
+        width: 1180px;
     }
-
 
 }
 
@@ -1076,8 +1075,8 @@ footer div p {
         justify-content: space-between;
         margin-bottom: 40px;
         gap: 30px;
+        max-width: 360px;
     }
-
 
 
     /****** Hebergements ***********/
@@ -1217,8 +1216,8 @@ footer div p {
         padding-top: 30px;
         margin-bottom: 60px;
         min-width: 369px;
+        max-width: 370px;
     }
-
 
     .activites {
         display: flex;
@@ -1272,6 +1271,7 @@ footer div p {
         gap: 40px;
         padding-left: 30px;
         padding-bottom: 30px;
+        max-width: 375px;
     }
 
 }
