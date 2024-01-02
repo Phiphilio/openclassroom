@@ -151,6 +151,7 @@ li {
 
 .search_bar {
     display: flex;
+    width: 40%;
 }
 
 .info_group {
@@ -158,7 +159,6 @@ li {
     flex-direction: column;
     gap: 35px;
     margin-bottom: 30px;
-    width: 93.05%;
 }
 
 .search_bar button {
@@ -866,7 +866,6 @@ footer div p {
 
     .enTete:nth-child(1) {
         border-bottom: 2px solid #F2F2F2;
-        width: 375px;
     }
 
     nav {
@@ -907,8 +906,8 @@ footer div p {
 
     .search_bar {
         display: flex;
-        width: 355px;
         margin-left: 10px;
+        width: 94%;
     }
 
     .fa-solid.fa-location-dot::before {
@@ -1063,10 +1062,10 @@ footer div p {
         margin-left: 10px;
     }
 
-    .infobar span {
+    /* .infobar span {
         min-width: 302px;
         max-width: 310px;
-    }
+    }*/
 
     /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires {
@@ -1075,7 +1074,7 @@ footer div p {
         justify-content: space-between;
         margin-bottom: 40px;
         gap: 30px;
-        max-width: 360px;
+
     }
 
 
@@ -1083,7 +1082,6 @@ footer div p {
     .hebergements {
         width: 100%;
         background-color: white;
-        min-width: 365px;
     }
 
     .hebergements h2,
@@ -1155,7 +1153,6 @@ footer div p {
         flex-direction: column;
         margin-top: 30px;
         background-color: var(--main-bg-color);
-        min-width: 369px;
         padding-top: 15px;
     }
 
@@ -1169,8 +1166,7 @@ footer div p {
     .populaires-cards {
         display: flex;
         flex-direction: column;
-        width: 93.5%;
-        min-width: 344px;
+        width: 100%;
         padding-left: 20px;
         padding-bottom: 20px;
     }
@@ -1215,8 +1211,6 @@ footer div p {
     .section-activites {
         padding-top: 30px;
         margin-bottom: 60px;
-        min-width: 369px;
-        max-width: 370px;
     }
 
     .activites {
@@ -1263,7 +1257,7 @@ footer div p {
 
     footer {
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         box-sizing: border-box;
         background-color: #F2F2F2;
         width: 100%;
@@ -1271,7 +1265,7 @@ footer div p {
         gap: 40px;
         padding-left: 30px;
         padding-bottom: 30px;
-        max-width: 375px;
+        /* max-width: 375px; */
+        flex-direction: column;
     }
-
 }
