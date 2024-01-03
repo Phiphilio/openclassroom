@@ -151,7 +151,6 @@ li {
 
 .search_bar {
     display: flex;
-    width: 40%;
 }
 
 .info_group {
@@ -541,6 +540,14 @@ footer div p {
     }
 
     /***** info group******/
+    .info_group {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        margin-bottom: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
     .title-section {
         white-space: nowrap;
@@ -635,7 +642,8 @@ footer div p {
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 70px;
-        min-width: 880px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
 
@@ -785,9 +793,10 @@ footer div p {
         height: 400.02px;
         padding-top: 30px;
         margin-bottom: 60px;
-        min-width: 885px;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90.3%;
     }
-
 
     .activites {
         display: flex;
@@ -822,12 +831,12 @@ footer div p {
         display: flex;
         flex-wrap: nowrap;
         background-color: #F2F2F2;
-        width: 888px;
+        width: 90.3%;
         gap: 100px;
         padding-left: 30px;
-        min-width: 887px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
-
 
 }
 
