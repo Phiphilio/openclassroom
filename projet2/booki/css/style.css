@@ -158,6 +158,8 @@ li {
     flex-direction: column;
     gap: 35px;
     margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .search_bar button {
@@ -352,8 +354,9 @@ footer div p {
         display: flex;
         justify-content: space-between;
         margin-bottom: 90px;
-        width: 93.05%;
         min-width: 1130px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
 
@@ -473,7 +476,8 @@ footer div p {
     .section-activites {
         padding-top: 30px;
         margin-bottom: 60px;
-        min-width: 1210px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
 
@@ -514,7 +518,8 @@ footer div p {
         min-width: 1063px;
         gap: 190px;
         padding-left: 30px;
-        width: 1180px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
 }
@@ -841,7 +846,7 @@ footer div p {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
     /* ... */
     html {
@@ -907,9 +912,8 @@ footer div p {
     .headline h1 {
         display: flex;
         flex-wrap: wrap;
-        min-width: 342px;
-        /* l'épaisseur ne changera pas en dessous de 500px ça me permet de garder la même forme*/
-        max-width: 343px;
+        /* min-width: 342px; */
+        /* max-width: 343px; */
         font-size: 22px;
     }
 
@@ -979,7 +983,6 @@ footer div p {
     .filter_bar {
         display: flex;
         flex-direction: column;
-        margin-left: 10px;
     }
 
     .filter_bar ul {
@@ -990,7 +993,6 @@ footer div p {
         margin-top: 0;
         margin-bottom: 0;
         min-width: 351px;
-
     }
 
     input::placeholder {
@@ -1175,7 +1177,6 @@ footer div p {
     .populaires-cards {
         display: flex;
         flex-direction: column;
-        width: 100%;
         padding-left: 20px;
         padding-bottom: 20px;
     }
