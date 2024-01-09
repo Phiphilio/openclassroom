@@ -795,7 +795,6 @@ footer div p {
 
     /****** Activités à marseille ***********/
     .section-activites {
-        height: 400.02px;
         padding-top: 30px;
         margin-bottom: 60px;
         margin-left: 5%;
@@ -951,7 +950,7 @@ footer div p {
         font-size: 18px;
         font-weight: 700;
         box-shadow: 0px 4px 4px 0px #00000040;
-
+        margin-left: -10px;
     }
 
     .search_bar button::before {
@@ -1272,7 +1271,7 @@ footer div p {
         /* flex-wrap: wrap; */
         box-sizing: border-box;
         background-color: #F2F2F2;
-        width: 100%;
+        
         min-width: 339px;
         gap: 40px;
         padding-left: 30px;
