@@ -889,9 +889,13 @@ footer div p {
     .menu_de_navi div {
         padding: 5px 5px 0px 5px;
         /* j'ai supprimé le padding-bottom pour que la ligne blanche invisible et la ligne bleue soient conformes à la maquette ne soit*/
-        margin: 15px 15px 0px 15px;
+        margin: 15px 0px 0px 0px;
         border-top: 2px solid white;
         border-bottom: 2px solid white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .menu_de_navi div:hover {
@@ -1271,7 +1275,7 @@ footer div p {
         /* flex-wrap: wrap; */
         box-sizing: border-box;
         background-color: #F2F2F2;
-        
+
         min-width: 339px;
         gap: 40px;
         padding-left: 30px;
